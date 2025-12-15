@@ -11,6 +11,8 @@ En parella hem analitzat 4 eines d’assistència remota sota demanda:
 - **Zoho Assist**: eina cloud de suport remot pensada directament per empreses i helpdesk, amb mòduls de remote support i unattended access, suport per Windows, macOS i Linux, i funcions com compartir pantalla, transferència d’arxius, xat, multi-monitor, etc.
 
 ![img1](img/img1.png)
+En parella hem tret la conclusio de que anydesk, en base preu i facilitat de fer servir aniria millor, de part de client es molt facil de fer servir, y de part del tecnic no es molt elevada de preu
+
 ![img2](img/img2.png)
 
 ---
