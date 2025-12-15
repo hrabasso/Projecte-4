@@ -17,7 +17,7 @@ En parella hem analitzat 4 eines d’assistència remota sota demanda:
 
 Per començar hem d'instal·lar **AnyDesk**, i per això:
 
-1. Ens dirigirem a AnyDesk.
+1. Ens dirigirem a la pagina  d'AnyDesk
 2. Fem clic a **Descargar ahora**, i ens sortirà a descàrregues `AnyDesk.exe`, el qual executarem.
 
 ![img3](img/img3.png)
