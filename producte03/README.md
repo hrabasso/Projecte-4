@@ -12,4 +12,4 @@ Com en projectes anteriors, la metodologia Kanban és vital pel bon funcionament
 Cada setmana es farà una revisió de l’estat del **Planner**, així que és molt important no deixar la gestió del Kanban per última hora.
 
 ## 📎 Recursos
-- [Enllaç al Kanban](https://planner.cloud.microsoft/webui/v1/plan/xjWim1Hb20uRrj7wnn9V_5YAEJLT?tid=c7b5981a-7820-4ac8-ae65-03515ea81317)
+- [Enllaç al Kanban](https://planner.cloud.microsoft/webui/v1/plan/ZXu14ZZ8C0yuMAjDLLJz1ZYAC1ji?tid=c7b5981a-7820-4ac8-ae65-03515ea81317)
