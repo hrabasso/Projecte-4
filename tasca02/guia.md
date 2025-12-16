@@ -234,21 +234,3 @@ Creem els scripts i donem permisos
 Obrim el arxiu de crontab per posar las tascas que volem que cron executi
 ![Permisos execució](./img/img111.jpg)
 ![Cron incremental](./img/img121.jpg)
-
----
-
-## Notes i bones pràctiques
-
-- Mantén la passphrase fora de scripts si pots (usa variables d'entorn o fitxers protegits).
-- Verifica periòdicament les restauracions (no n'hi ha prou amb fer còpies, cal provar retorn).
-- Aplica la regla 3-2-1: producció + 2 còpies, en 2 suports diferents, amb 1 còpia off-site.
-- Documenta la configuració i versions instal·lades.
-
----
-
-## Materials i enllaços
-
-- Duplicati: https://www.duplicati.com/
-- Duplicity: https://duplicity.us/
-
-´
