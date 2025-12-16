@@ -11,9 +11,9 @@ Objectiu: còpies horàries del perfil d'usuari a un disc secundari i còpia di�
 
 ### Seqüència d'instal·lació i configuració
 
-Creació de partició en el moment d'instal·lar Windows.
+Aqui podem crear las particions un cop començem a instalar windows, pero jo ho he fet un cop ja el teniam instal·lat
 
-![Partició durant instal·lació](./img/img4.jpg)
+![Partició durant instal·lació](./img/img4.png)
 
 ---
 
@@ -21,122 +21,92 @@ Instal·lació de Windows 11.
 
 ![Instal·lació Windows](./img/img9.jpg)
 
----
+
 Assistim la instal·lació fins completar la configuració inicial de l'equip.
-
-Instal·lació de Google Chrome.
-
-![Instal·lació Chrome](./img/img10.jpg)
-
----
-Instal·lem el navegador per facilitar l'accés a serveis com Google Drive.
 
 Instal·lació i configuració de Duplicati: creació de treball, selecció de destí local (disc secundari de 10 GB), selecció de carpetes (Documents), planificació horària i opcions.
 
 ![Descarregar duplicaty](./img/img13.jpg)
 Descarrega de l’instal·lador de Duplicati des del lloc oficial.
 
----
-
 ![Instal·lació duplicatty](./img/img14.jpg)
 Procés d’instal·lació de Duplicati a Windows.
 
----
 
 ![Pantalla inicial Duplicati](./img/img17.jpg)
 Vista d’inici de l’aplicació, punt de partida per crear un backup.
 
----
 
 ![Crear feina](./img/img18.jpg)
 Creació d’un nou treball de còpia de seguretat.
 
----
 
 ![New backup](./img/img21.jpg)
 Seleccionem new backup perque no tenim res per importar .
 
----
 
 ![Creem password](./img/img24.jpg)
 Posem una password que ens enrecordem
 
----
 
 ![Posem la carpeta desti](./img/img25.jpg)
 Posem que es guardin a el disc D:
 
----
 
 ![Seleccionar carpetes](./img/img28.jpg)
 Selecció de les carpetes del perfil que es volen copiar (Documents, etc.).
 
----
-
 ![Programació cada hora](./img/img32.jpg)
 Definició de la periodicitat horària per a les còpies locals.
 
----
 
 ![Resum tasca](./img/img33.jpg)
 Resum final de la configuració abans de guardar i executar.
 
----
 
 # Creem la copia a google drive
 
 ## Es lo mateix pero loguejant-nos amb google drive
 
----
 
 ![Resum tasca](./img/img36.jpg)
 Ens demana un AuthID i no el tenim, tot i aixi continuem endevant.
 
----
 
 ![Resum tasca](./img/img37.jpg)
 
 Ara en surt aquest error i entrem al link.
 
----
 
 ![Resum tasca](./img/img38.jpg)
 Entrem i ens logueijem i ens donara aquest codi.
-
----
 
 ![Resum tasca](./img/img41.jpg)
 
 Ara posem el codi on ens demanaba AuthID.
 
----
 ![Resum tasca](./img/img47.jpg)
 
 Seguim els mateixos pasos d'abans pero cambiant la hora i dia i ja tendriem les copies creades.
 
----
 # Comprobvació
 
 Crear un fitxer de prova a Documents.
 
 ![Fitxer de prova](./img/img50.png)
 
----
 Afegim un fitxer per comprovar que la còpia captura correctament els canvis.
 
 Executar la còpia de seguretat a Duplicati.
 
 ![Execució backup](./img/img53.jpg)
 
----
 
 Esborrar el fitxer a Documents.
 
 ![Esborrar Documents](./img/img54.jpg)
 
----
 
----
 
 Recuperar el document.
 
@@ -144,9 +114,7 @@ Recuperar el document.
 ![Esborrar Documents](./img/img71.jpg)
 ![Esborrar Documents](./img/img74.jpg)
 
----
 
----
 
 ## Part 2 — Còpia de seguretat a Linux amb Duplicity + cron
 
@@ -159,7 +127,7 @@ Preparació de la unitat de backup (10 GB): detectar el disc, formatejar en XFS,
 ![Formatar XFS](./img/img80.jpg)
 ![Crear punt de muntatge](./img/img81.jpg)
 
----
+
 Es defineix el sistema de fitxers i el punt de muntatge per a la unitat auxiliar.
 
 Muntatge manual a `/media/backup`.
@@ -167,12 +135,10 @@ Muntatge manual a `/media/backup`.
 ![Muntar volum](./img/img82.jpg)
 ![Volum muntat](./img/img85.jpg)
 
----
 Crear usuaris.
 
 ![Muntar volum](./img/img89.jpg)
 
----
 
 El volum queda disponible per rebre còpies de seguretat.
 
@@ -180,14 +146,12 @@ Instal·lació de Duplicity.
 
 ![Instal·lar duplicity](./img/img86.jpg)
 
----
 Instal·lació de l'eina de còpia per entorns Linux.
 
 Preparar dades de prova: crear usuaris addicionals i fitxers de 10 MB en `home`.
 
 ![Crear fitxers de prova](./img/img92.jpg)
 
----
 Creem usuaris i contingut per validar les còpies.
 
 Fer una còpia completa de `/home` cap a la unitat de backup.
@@ -195,14 +159,12 @@ Fer una còpia completa de `/home` cap a la unitat de backup.
 ![Backup complet /home](./img/img93.jpg)
 ![Verificar contingut backup](./img/img96.jpg)
 
----
 
 Verificar restauració: esborrar i restaurar fitxers.
 
 ![Esborrar fitxers](./img/img97.jpg)
 ![Restore complet](./img/img100.jpg)
 
----
 Es simula una pèrdua de dades i es verifica la recuperació.
 
 Fer una còpia incremental després d'afegir un fitxer de ~4 MB.
@@ -211,19 +173,16 @@ Fer una còpia incremental després d'afegir un fitxer de ~4 MB.
 ![Backup incremental](./img/img102.jpg)
 ![Comprovació versions](./img/img105.jpg)
 
----
 Es genera un canvi menor i s'executa una còpia incremental per observar diferències.
 
 Desmuntar la unitat de backup.
 
 ![Desmuntar](./img/img106.jpg)
 
----
 La unitat queda desconnectada per seguretat.
 
 Automatització amb scripts i cron (captures del procés).
 
----
 
 Creem els scripts i donem permisos
 ![Permisos execució](./img/img109.jpg)
