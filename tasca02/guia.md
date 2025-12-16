@@ -22,7 +22,7 @@ Durant la instal·lació de Windows es crea una partició secundària que s’ut
 
 Instal·lació del sistema operatiu Windows 11.
 
-![Instal·lació Windows](./img/img9.jpg)
+(./img/img9.jpg)
 
 Un cop finalitzada la configuració inicial, s’instal·la Google Chrome per facilitar l’accés a serveis web com Google Drive.
 
